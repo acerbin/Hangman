@@ -65,6 +65,7 @@ function updateUI() {
     guessesLeftH1.style.display  = "none";
     welcome.textContent = "Nice try! The word was " + hangman1.word.join('');
     refreshButton.style.display  = "block";
+    localStorage.removeItem("game");
   } else {
     console.log('the winning bit');
     wordSpot.value = hangman1.getPattern();
