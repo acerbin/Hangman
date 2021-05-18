@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+  <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-inverse">
+    <div class="container">
+      <a href="#" class="navbar-brand">HomeWork</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navs" aria-controls="navs" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navs">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="words.html" class="nav-link">Words</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Hangman</h1>
+    <h2 id ="welcome">Welcome to Hangman!</h2>
+    <h2 id="wordSpotH1">Your Word is: <input disabled type="text" id="word" class="border border-bottom mx-1"></input></h2>
+    <h2 id="guessesLeftH1">Guesses left: <span id="guessesLeft"></span></h2>
+    <h2 id="instruction">Make a guess by pressing a keyboard key.</h2>
+
+    <hr>
+    <button id="newGame" class="btn btn-dark mt5" type="button" name="button">Play again</button>
+  </div>
+
+
+<script src="request.js" charset="utf-8"></script>
+<script src="hangman.js" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+
+</body>
+</html>
